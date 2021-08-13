@@ -1,0 +1,93 @@
+#include <stdio.h>
+ 
+float KmToMile (float);
+float InchToFoot (float);
+float CmToInch (float);
+float InchToMeter (float);
+float YardToFoot (float);
+float PoundToKg (float);
+ 
+
+int main()
+{
+	int a,num;
+	float b;
+	 
+	printf("Enter 1 Km to Mile\n Enter 2 Inch to foot\n Enter 3 Cm to Inch\n Enter 4 Inch to Meter\n Enter 5 Yard to foot\n Enter 6 Pound to Kg\n Enter 7 to Quit\n");
+	scanf("%d",&a);
+	if (a==1)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,KmToMile(b));
+		
+	}
+	else if (a==2)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,InchToFoot(b));
+		
+	}
+	else if (a==3)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,CmToInch(b));
+		
+	}
+	else if (a==4)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,InchToMeter(b));
+		
+	}
+	
+	else if (a==5)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,YardToFoot(b));
+		
+	}
+	else if (a==6)
+	{
+		printf("Enter value you want to be changed\n");
+		scanf ("%f",&b);
+		printf("%f = %f\n",b,PoundToKg(b));
+		
+	}
+	else if (a==7)
+	{
+		printf(" Please Enter a Valid Input and try again\n");
+	}
+	 
+	
+	
+}
+
+float KmToMile (float num)
+{
+	return (num * 0.62);
+}
+float InchToFoot (float num)
+{
+	return (num * 0.08);
+}
+float CmToInch (float num)
+{
+	return (num * 0.39);
+}
+float InchToMeter (float num)
+{
+	return (num * 0.02);
+}
+float YardToFoot (float num)
+{
+	return (num * 3);
+}
+float PoundToKg (float num)
+{
+	return (num * 0.45);
+}
